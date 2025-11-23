@@ -4,8 +4,13 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "node ./src/server.js"
-  },
+  "dev": "node ./src/app.js",
+  "start": "node ./src/app.js",
+  "test": "echo \"No hay tests en backend\"",
+  "test:ci": "npm run test || echo \"(CI) Tests skipped\"",
+  "build": "echo \"Backend no requiere build\""
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",

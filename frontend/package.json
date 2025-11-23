@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "test": "echo \"No hay tests en frontend\"",
+"test:ci": "npm run test || echo \"(CI) Tests skipped\"",
+
     "preview": "vite preview"
+    
   },
   "dependencies": {
     "html2canvas": "^1.4.1",
