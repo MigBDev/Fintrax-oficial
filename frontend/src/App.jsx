@@ -15,7 +15,7 @@ import "./styles/Responsive.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Fintrax-oficial">
       {/* ✅ ORDEN CORRECTO: UserProvider debe estar FUERA de TransaccionProvider 
           si TransaccionProvider depende de usuario */}
       <UserProvider>
@@ -30,21 +30,22 @@ function App() {
             {/* Registro */}
             <Route path="/register" element={<RegisterPage />} />
 
-            {/* Ruta para restablecer contraseña */}
+            {/* Reset password */}
             <Route path="/reset-password" element={<ResetPassword />} />
 
-            {/* Ruta para olvidar contraseña */}
+            {/* Forgot password */}
             <Route path="/forgot-password" element={<ForgotPassword />} />
 
             {/* Menú */}
             <Route path="/menu" element={<MenuPage />} />
 
+            {/* Dashboard */}
             <Route path="/dashboard" element={<Dashboard />} />
 
             {/* Gestión Financiera */}
             <Route path="/gestion-financiera" element={<GestionFinanciera />} />
 
-            {/* Ruta para callback de Google */}
+            {/* Google OAuth callback */}
             <Route path="/auth/google/callback" element={<GoogleCallback />} />
           </Routes>
         </TransaccionProvider>
