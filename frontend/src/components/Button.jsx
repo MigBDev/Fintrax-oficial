@@ -1,4 +1,4 @@
-import "../styles/button.css";
+import "../styles/Button.css";
 
 export default function Button({ text, variant = "primary", onClick }) {
   return (
